@@ -1,4 +1,5 @@
 package com.doubledragon.webservice.domain.posts;
+import com.doubledragon.webservice.domain.BaseTimeEntity;
 
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -13,7 +14,7 @@ import javax.persistence.Id;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id
     @GeneratedValue
