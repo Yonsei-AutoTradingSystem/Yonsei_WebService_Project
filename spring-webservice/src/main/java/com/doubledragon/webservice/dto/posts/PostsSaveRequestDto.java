@@ -1,7 +1,13 @@
 package com.doubledragon.webservice.dto.posts;
 
 import com.doubledragon.webservice.domain.posts.Posts;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@Setter
+@NoArgsConstructor
 public class PostsSaveRequestDto {
 
     private String title;
