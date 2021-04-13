@@ -17,7 +17,9 @@ H2 client
 
 ### 3. 클라이언트 화면
 
+1.
 ![클라이언트 화면 구축](https://user-images.githubusercontent.com/54561105/114498731-94f76700-9c5f-11eb-8023-447433a5ca22.png)
 
 
+2.
 ![게시글 등록](https://user-images.githubusercontent.com/54561105/114498843-cff99a80-9c5f-11eb-9615-2ae9c24f2360.png)
