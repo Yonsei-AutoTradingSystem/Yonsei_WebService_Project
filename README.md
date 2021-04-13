@@ -11,3 +11,6 @@ H2 client
 
 ![H2_DB에 데이터 입력](https://user-images.githubusercontent.com/54561105/114303546-9747ad00-9b09-11eb-9e9d-692e61b709bb.png)
 
+### 3. 클라이언트 화면
+
+![클라이언트 화면 구축](https://user-images.githubusercontent.com/54561105/114498731-94f76700-9c5f-11eb-8023-447433a5ca22.png)
