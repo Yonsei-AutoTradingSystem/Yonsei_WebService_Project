@@ -4,7 +4,7 @@ spring:
     active: local # 기본 환경 선택
 
 before_install:
-  - chomod +x gradlew
+  chomod +x gradlew
 
 # local 환경
 ---
