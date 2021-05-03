@@ -1,6 +1,6 @@
 package com.doubledragon.webservice.domain.posts;
-import com.doubledragon.webservice.domain.BaseTimeEntity;
 
+import com.doubledragon.webservice.domain.BaseTimeEntity;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
