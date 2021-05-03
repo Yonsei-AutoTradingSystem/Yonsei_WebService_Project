@@ -35,5 +35,4 @@ dependencies {
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	annotationProcessor ('org.projectlombok:lombok')
-	compile ('joda-time:joda-time:2.2')
 }
