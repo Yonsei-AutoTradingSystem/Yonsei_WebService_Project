@@ -10,13 +10,13 @@ import java.util.Optional;
 @Getter
 public class PostsMainResponseDto {
     private Long id;
-    private String title;
+    private String coinName;
     private String author;
     private String modifiedDate;
 
     public PostsMainResponseDto(Posts entity) {
         id = entity.getId();
-        title = entity.getTitle();
+        coinName = entity.getCoinName();
         author = entity.getAuthor();
         modifiedDate = toStringDateTime(entity.getModifiedDate());
     }

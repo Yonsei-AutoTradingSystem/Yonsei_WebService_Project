@@ -18,7 +18,7 @@
     <table class="table table-horizontal table-bordered">
         <thead class="thead-strong">
         <tr>
-            <th>게시글번호</th>
+            <th>전략 번호</th>
             <th>코인 이름</th>
             <th>상승률</th>
             <th>하락률</th>
@@ -29,7 +29,7 @@
         {{#each posts}}
             <tr>
                 <td>{{id}}</td>
-                <td>{{title}}</td>
+                <td>{{coinName}}</td>
                 <td>{{title}}</td>
                 <td>{{author}}</td>
                 <td>{{modifiedDate}}</td>
@@ -53,7 +53,7 @@
                 <form>
                     <div class="form-group">
                         <label for="title">코인 이름</label>
-                        <input type="text" class="form-control" id="title" placeholder="제목을 입력하세요">
+                        <input type="text" class="form-control" id="coinName" placeholder="제목을 입력하세요">
                     </div>
                     <div class="form-group">
                         <label for="title">상승률</label>

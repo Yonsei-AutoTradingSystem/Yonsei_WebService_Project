@@ -7,7 +7,7 @@ var main = {
     },
     save : function () {
         var data = {
-            title: $('#title').val(),
+            coinName: $('#coinName').val(),
             author: $('#author').val(),
             content: $('#content').val()
         };
