@@ -26,12 +26,14 @@ public class Posts extends BaseTimeEntity {
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
 
-    private String author;
+    private String riseRate;
+    private String declineRate;
 
     @Builder
-    public Posts(String coinName, String content, String author) {
+    public Posts(String coinName, String content, String riseRate, String declineRate) {
         this.coinName = coinName;
         this.content = content;
-        this.author = author;
+        this.riseRate = riseRate;
+        this.declineRate = declineRate;
     }
 }

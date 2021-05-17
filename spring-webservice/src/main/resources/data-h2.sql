@@ -1,2 +1,2 @@
-insert into posts (coin_name, author, content, created_date, modified_date) values ('테스트1', 'test1@gmail.com', '테스트1의 본문', now(), now());
-insert into posts (coin_name, author, content, created_date, modified_date) values ('테스트2', 'test2@gmail.com', '테스트2의 본문', now(), now());
+insert into posts (coin_name, rise_rate, decline_rate, content, created_date, modified_date) values ('BTC', '0.5', '0.3', '테스트1의 본문', now(), now());
+insert into posts (coin_name, rise_rate, decline_rate, content, created_date, modified_date) values ('ETH', '0.5', '0.3', '테스트2의 본문', now(), now());

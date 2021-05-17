@@ -8,7 +8,8 @@ var main = {
     save : function () {
         var data = {
             coinName: $('#coinName').val(),
-            author: $('#author').val(),
+            riseRate: $('#riseRate').val(),
+            declineRate: $('#declineRate').val(),
             content: $('#content').val()
         };
 

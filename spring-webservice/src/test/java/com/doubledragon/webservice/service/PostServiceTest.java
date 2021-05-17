@@ -31,9 +31,10 @@ public class PostServiceTest {
     public void Dto데이터가_posts테이블에_저장된다 () {
         //given
         PostsSaveRequestDto dto = PostsSaveRequestDto.builder()
-                .author("jojoldu@gmail.com")
+                .riseRate("0.1")
+                .declineRate("0.2")
                 .content("테스트")
-                .title("테스트 타이틀")
+                .coinName("테스트 타이틀")
                 .build();
 
         //when
@@ -41,8 +42,9 @@ public class PostServiceTest {
 
         //then
         Posts posts = postsRepository.findAll().get(0);
-        assertThat(posts.getAuthor()).isEqualTo(dto.getAuthor());
+        assertThat(posts.getRiseRate()).isEqualTo(dto.getRiseRate());
+        assertThat(posts.getDeclineRate()).isEqualTo(dto.getDeclineRate());
         assertThat(posts.getContent()).isEqualTo(dto.getContent());
-        assertThat(posts.getTitle()).isEqualTo(dto.getTitle());
+        assertThat(posts.getCoinName()).isEqualTo(dto.getCoinName());
     }
 }

@@ -35,9 +35,10 @@ public class PostsRepositoryTest {
     public void 게시글저장_불러오기() {
         //given
         postsRepository.save(Posts.builder()
-                .title("테스트 게시글")
+                .coinName("테스트 게시글")
                 .content("테스트 본문")
-                .author("jojoldu@gmail.com")
+                .riseRate("0.1")
+                .declineRate("0.2")
                 .build());
 
         //when
@@ -45,7 +46,7 @@ public class PostsRepositoryTest {
 
         //then
         Posts posts = postsList.get(0);
-        assertThat(posts.getTitle(), is("테스트 게시글"));
+        assertThat(posts.getCoinName(), is("테스트 게시글"));
         assertThat(posts.getContent(), is("테스트 본문"));
     }
 
@@ -54,9 +55,10 @@ public class PostsRepositoryTest {
         //given
         LocalDateTime now = LocalDateTime.now();
         postsRepository.save(Posts.builder()
-                .title("테스트 게시글")
+                .coinName("테스트 게시글")
                 .content("테스트 본문")
-                .author("jojoldu@gmail.com")
+                .riseRate("0.1")
+                .declineRate("0.2")
                 .build());
         //when
         List<Posts> postsList = postsRepository.findAll();

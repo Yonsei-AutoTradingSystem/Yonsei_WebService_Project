@@ -1,7 +1,8 @@
+
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>스프링부트 웹서비스</title>
+    <title>Double Dragon</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -14,11 +15,12 @@
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">투자 전략 등록</button>
     <br/>
     <br/>
+
     <!-- 목록 출력 영역 -->
     <table class="table table-horizontal table-bordered">
         <thead class="thead-strong">
         <tr>
-            <th>전략 번호</th>
+            <th>번호</th>
             <th>코인 이름</th>
             <th>상승률</th>
             <th>하락률</th>
@@ -30,8 +32,8 @@
             <tr>
                 <td>{{id}}</td>
                 <td>{{coinName}}</td>
-                <td>{{title}}</td>
-                <td>{{author}}</td>
+                <td>{{riseRate}}</td>
+                <td>{{declineRate}}</td>
                 <td>{{modifiedDate}}</td>
             </tr>
         {{/each}}
@@ -52,19 +54,19 @@
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        <label for="title">코인 이름</label>
+                        <label for="coinName">코인 이름</label>
                         <input type="text" class="form-control" id="coinName" placeholder="제목을 입력하세요">
                     </div>
                     <div class="form-group">
-                        <label for="title">상승률</label>
-                        <input type="text" class="form-control" id="title" placeholder="제목을 입력하세요">
+                        <label for="riseRate"> 상승률 </label>
+                        <input type="text" class="form-control" id="riseRate" placeholder="작성자를 입력하세요">
                     </div>
                     <div class="form-group">
-                        <label for="author"> 하락률 </label>
-                        <input type="text" class="form-control" id="author" placeholder="작성자를 입력하세요">
+                        <label for="declineRate"> 하락률 </label>
+                        <input type="text" class="form-control" id="declineRate" placeholder="작성자를 입력하세요">
                     </div>
                     <div class="form-group">
-                        <label for="content"> 내용 </label>
+                        <label for="content"> 메모 </label>
                         <textarea class="form-control" id="content" placeholder="내용을 입력하세요"></textarea>
                     </div>
                 </form>

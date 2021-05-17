@@ -11,13 +11,15 @@ import java.util.Optional;
 public class PostsMainResponseDto {
     private Long id;
     private String coinName;
-    private String author;
+    private String riseRate;
+    private String declineRate;
     private String modifiedDate;
 
     public PostsMainResponseDto(Posts entity) {
         id = entity.getId();
         coinName = entity.getCoinName();
-        author = entity.getAuthor();
+        riseRate = entity.getRiseRate();
+        declineRate = entity.getDeclineRate();
         modifiedDate = toStringDateTime(entity.getModifiedDate());
     }
 
