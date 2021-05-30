@@ -12,9 +12,6 @@ import datetime
 import math
 import requests
 
-
-
-
 ############# 업비트 api auth ############
 #with open("Upbit_API_KEY.txt", 'r', encoding='utf-8') as f:
     #lines = f.readlines()

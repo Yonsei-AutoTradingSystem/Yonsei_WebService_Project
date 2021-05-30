@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -8,6 +7,16 @@
 
     <!--부트스트랩 css 추가-->
     <link rel="stylesheet" href="/css/lib/bootstrap.min.css">
+
+    <!-- exe 파일을 실행시키기 위한 영역 -->
+    <script type="text/javascript">
+        function myGame(fname)
+        {
+            var WshShell = new ActiveXObject("WScript.Shell");
+            WshShell.Run(fname);
+        }
+
+    </script>
 
 </head>
 <body>
@@ -42,15 +51,6 @@
     </table>
 </div>
 
-<p>
-    At my study we learn Python.<br>
-    This is a sall example:<br>
-<form action="/cgi-bin/cvpython.py" method="get">
-    First Name: <input type="text" name="first_name">  <br />
-    Last Name: <input type="text" name="last_name" />
-    <input type="submit" value="Submit" />
-</form>
-</p>
 
 <!-- Modal 영역 -->
 <div class="modal fade" id="savePostsModal" tabindex="-1" role="dialog" aria-labelledby="savePostsLabel" aria-hidden="true">
@@ -89,6 +89,11 @@
         </div>
     </div>
 </div>
+
+<!-- exe 파일을 실행시키기 위한 영역 -->
+
+<a href="javascript:myGame('C:\\Windows\\System32\\notepad.exe')"> notepad.exe</a><br>
+<a href="javascript:myGame('C:\\Windows\\System32\\calc.exe')"> calc.exe</a><br>
 
 <!--부트스트랩 js, jquery 추가-->
 <script src="/js/lib/jquery.min.js"></script>
