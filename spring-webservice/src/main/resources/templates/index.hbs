@@ -1,6 +1,7 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Double Dragon</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,14 +18,18 @@
         }
 
     </script>
-
 </head>
 <body>
-<h1>투자 자동화 서비스</h1>
+<div style="text-align:center; color:white; background-color:black; padding:20px;">
+
+    <h1>투자 자동화 서비스</h1>
+</div>
+<br/>
+
 <div class="col-md-12">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">투자 전략 등록</button>
-    <br/>
-    <br/>
+    <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#register">회원가입</button>
+    <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#login">로그인</button>
+    <br/><br/>
 
     <!-- 목록 출력 영역 -->
     <table class="table table-horizontal table-bordered">
@@ -49,8 +54,9 @@
         {{/each}}
         </tbody>
     </table>
-</div>
 
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">투자 전략 등록</button>
+</div>
 
 <!-- Modal 영역 -->
 <div class="modal fade" id="savePostsModal" tabindex="-1" role="dialog" aria-labelledby="savePostsLabel" aria-hidden="true">
@@ -90,8 +96,71 @@
     </div>
 </div>
 
-<!-- exe 파일을 실행시키기 위한 영역 -->
+<!-- Register 영역 -->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="savePostsLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="savePostsLabel">회원가입</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="coinName">이름</label>
+                        <input type="text" class="form-control" id="coinName" placeholder="제목을 입력하세요">
+                    </div>
+                    <div class="form-group">
+                        <label for="riseRate"> 아이디 </label>
+                        <input type="text" class="form-control" id="riseRate" placeholder="작성자를 입력하세요">
+                    </div>
+                    <div class="form-group">
+                        <label for="declineRate"> 비밀번호 </label>
+                        <input type="text" class="form-control" id="declineRate" placeholder="작성자를 입력하세요">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                <button type="button" class="btn btn-primary" id="btn-save">가입</button>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- Login 영역 -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="savePostsLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="savePostsLabel">로그인</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="coinName">아이디</label>
+                        <input type="text" class="form-control" id="coinName" placeholder="제목을 입력하세요">
+                    </div>
+                    <div class="form-group">
+                        <label for="riseRate"> 비밀번호 </label>
+                        <input type="text" class="form-control" id="riseRate" placeholder="작성자를 입력하세요">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                <button type="button" class="btn btn-primary" id="btn-save">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- exe 파일을 실행시키기 위한 영역 -->
 <a href="javascript:myGame('C:\\Windows\\System32\\notepad.exe')"> notepad.exe</a><br>
 <a href="javascript:myGame('C:\\Windows\\System32\\calc.exe')"> calc.exe</a><br>
 
