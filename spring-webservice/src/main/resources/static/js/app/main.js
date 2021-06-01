@@ -18,7 +18,7 @@ var main = {
         };
 
         var WshShell = new ActiveXObject("WScript.Shell");
-        WshShell.Run('C:\\Windows\\System32\\notepad.exe');
+        WshShell.Run('C:\\yonsei2021\\pythonProject\\dist\\main\\main.exe');
 
         $.ajax({
             type: 'POST',
