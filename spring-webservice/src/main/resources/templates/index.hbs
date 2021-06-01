@@ -19,8 +19,8 @@
 
     </script>
 </head>
-<body>
-<div style="text-align:center; color:white; background-color:black; padding:20px;">
+<br>
+<div style="text-align:center; color:#ffffff; background-color:black; padding:20px;">
 
     <h1>투자 자동화 서비스</h1>
 </div>
@@ -72,15 +72,15 @@
                 <form>
                     <div class="form-group">
                         <label for="coinName">코인 이름</label>
-                        <input type="text" class="form-control" id="coinName" placeholder="제목을 입력하세요">
+                        <input type="text" class="form-control" id="coinName" placeholder="코인 이름을 입력하세요">
                     </div>
                     <div class="form-group">
                         <label for="riseRate"> 상승률 </label>
-                        <input type="text" class="form-control" id="riseRate" placeholder="작성자를 입력하세요">
+                        <input type="text" class="form-control" id="riseRate" placeholder="상승률을 입력하세요">
                     </div>
                     <div class="form-group">
                         <label for="declineRate"> 하락률 </label>
-                        <input type="text" class="form-control" id="declineRate" placeholder="작성자를 입력하세요">
+                        <input type="text" class="form-control" id="declineRate" placeholder="하락률을 입력하세요">
                     </div>
                     <div class="form-group">
                         <label for="content"> 메모 </label>
@@ -90,18 +90,18 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
-                <button type="button" class="btn btn-primary" id="btn-save">등록</button>
+                <button type="button" class="btn btn-primary" id="btn-strategy-save">등록</button>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Register 영역 -->
-<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="savePostsLabel" aria-hidden="true">
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="RegisterSavePostsLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="savePostsLabel">회원가입</h5>
+                <h5 class="modal-title" id="RegisterSavePostsLabel">회원가입</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -109,36 +109,36 @@
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        <label for="coinName">이름</label>
-                        <input type="text" class="form-control" id="coinName" placeholder="제목을 입력하세요">
+                        <label for="userName">이름</label>
+                        <input type="text" class="form-control" id="userName" placeholder="이름을 입력하세요">
                     </div>
                     <div class="form-group">
-                        <label for="riseRate"> 아이디 </label>
-                        <input type="text" class="form-control" id="riseRate" placeholder="작성자를 입력하세요">
+                        <label for="userId"> 아이디 </label>
+                        <input type="text" class="form-control" id="userId" placeholder="아이디를 입력하세요">
                     </div>
                     <div class="form-group">
-                        <label for="declineRate"> 비밀번호 </label>
-                        <input type="text" class="form-control" id="declineRate" placeholder="작성자를 입력하세요">
+                        <label for="password"> 비밀번호 </label>
+                        <input type="password" class="form-control" id="password" placeholder="비밀번호를 입력하세요">
                     </div>
                     <div class="form-group">
-                        <label for="declineRate"> Access key </label>
-                        <input type="text" class="form-control" id="declineRate" placeholder="작성자를 입력하세요">
+                        <label for="accessKey"> Access key </label>
+                        <input type="text" class="form-control" id="accessKey" placeholder="Access key를 입력하세요">
                     </div>
                     <div class="form-group">
-                        <label for="declineRate"> Secret key </label>
-                        <input type="text" class="form-control" id="declineRate" placeholder="작성자를 입력하세요">
+                        <label for="secretKey"> Secret key </label>
+                        <input type="text" class="form-control" id="secretKey" placeholder="Secret key를 입력하세요">
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
-                <button type="button" class="btn btn-primary" id="btn-save">가입</button>
+                <button type="button" class="btn btn-primary" id="btn-register-save">가입</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Login 영역 -->
+<!-- Login 영역
 <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="savePostsLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -152,11 +152,11 @@
                 <form>
                     <div class="form-group">
                         <label for="coinName">아이디</label>
-                        <input type="text" class="form-control" id="coinName" placeholder="제목을 입력하세요">
+                        <input type="text" class="form-control" id="coinName" placeholder="아이디를 입력하세요">
                     </div>
                     <div class="form-group">
                         <label for="riseRate"> 비밀번호 </label>
-                        <input type="text" class="form-control" id="riseRate" placeholder="작성자를 입력하세요">
+                        <input type="text" class="form-control" id="riseRate" placeholder="비밀번호를 입력하세요">
                     </div>
                 </form>
             </div>
@@ -167,10 +167,16 @@
         </div>
     </div>
 </div>
+-->
 
-<!-- exe 파일을 실행시키기 위한 영역 -->
+
+<!-- exe 파일을 실행시키기 위한 영역
+<button type="button" class="btn btn-primary" id="execute-file">실행</button><br>
+
 <a href="javascript:myGame('C:\\Windows\\System32\\notepad.exe')"> notepad.exe</a><br>
 <a href="javascript:myGame('C:\\Windows\\System32\\calc.exe')"> calc.exe</a><br>
+-->
+
 
 <!--부트스트랩 js, jquery 추가-->
 <script src="/js/lib/jquery.min.js"></script>
