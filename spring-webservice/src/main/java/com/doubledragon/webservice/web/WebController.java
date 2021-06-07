@@ -1,11 +1,14 @@
 package com.doubledragon.webservice.web;
 
 import com.doubledragon.webservice.service.PostsService;
+import com.doubledragon.webservice.user.dto.posts.RegisterPostsSaveRequestDto;
 import com.doubledragon.webservice.user.service.RegisterPostsService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @AllArgsConstructor

@@ -8,6 +8,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -23,9 +24,24 @@ public class RegisterPostsService {
     }
 
     @Transactional(readOnly = true)
-    public List<RegisterPostsMainResponseDto> findAllDesc() {
+    public List<RegisterPostsMainResponseDto> findAllDesc()
+    {
         return registerPostsRepository.findAllDesc()
                 .map(RegisterPostsMainResponseDto::new)
                 .collect(Collectors.toList());
+    }
+
+    @Transactional(readOnly = true)
+    public int findByUserId(RegisterPostsSaveRequestDto dto)
+    {
+        if(registerPostsRepository.findByUserId(dto.getUserId()) == null)
+        {
+            System.out.println(registerPostsRepository.findByUserId(dto.getUserId()));
+            return 1;
+        }
+        else
+        {
+            return 2;
+        }
     }
 }

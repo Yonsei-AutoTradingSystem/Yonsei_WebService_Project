@@ -32,4 +32,9 @@ public class WebRestController {
     public Long registerSavePosts(@RequestBody RegisterPostsSaveRequestDto dto){
         return registerPostsService.save(dto);
     }
+
+    @PostMapping("/login")
+    public int loginCheck(@RequestBody RegisterPostsSaveRequestDto dto){
+        return registerPostsService.findByUserId(dto);
+    }
 }
